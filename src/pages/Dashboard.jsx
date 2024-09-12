@@ -116,7 +116,7 @@ function Dashboard() {
           {filteredUsers.map((item) => (
             <Col key={item.id} xs={24} sm={12} md={8} lg={6}>
               <Card
-                title={item.name}
+                title={"name: " + item.name}
                 bordered={false}
                 className="mb-6 capitalize"
                 style={{
@@ -132,7 +132,7 @@ function Dashboard() {
                   </Button>
                 ]}
               >
-                <p><strong>Age:</strong> {item.age}</p>
+                <p className='text-[15px]'><strong>Age:</strong> {item.age}</p>
               </Card>
             </Col>
           ))}
